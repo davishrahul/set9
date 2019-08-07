@@ -3,14 +3,23 @@
 using namespace std;
 int main()
 {
-    string emp="",input;
-    cin>>input;
-    for(int i=0;i<input.length();i++)
+    string emp = "", input;
+    int count = 0;
+    cin >> input;
+    for (int i = 0; i < input.length(); i++)
     {
-        if(isdigit(input[i]))
+        if (isdigit(input[i]))
         {
-            emp+=input[i];
+            count++;
+            emp += input[i];
         }
     }
-    cout<<emp;
+    if (count > 0)
+    {
+        cout << emp;
+    }
+    else
+    {
+        cout << "";
+    }
 }
