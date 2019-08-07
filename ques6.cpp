@@ -14,11 +14,11 @@ int main()
     }
     if(count>0)
     {
-        cout<<"yes";
+        cout<<"No";
     }
     else
     {
-        cout<<"no";
+        cout<<"Yes";
     }
     
 }
